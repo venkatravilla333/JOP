@@ -91,5 +91,58 @@
 // test(1, 2, 3, 4, 5)
 
 
+//scope
+// storage 
 
+var a = 1
+let b = 2
+const c = 3
+
+//access
+
+console.log(a)
+console.log(b)
+console.log(c)
+
+function test() {
+
+  //storage
+  var d = 4
+  let e = 5
+  const f = 6
+  // access
+  console.log(a)
+  console.log(b)
+  console.log(c)
+  console.log(d)
+  console.log(e)
+  console.log(f)
+
+
+  if (true) {
+    //storage
+
+    var g = 7
+    let h = 8
+    const i = 9
+    // access 
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    console.log(d)
+    console.log(e)
+    console.log(f)
+    console.log(g)
+    console.log(h)
+    console.log(i)
+  }
+
+  console.log(g)
+  // console.log(h)
+  // console.log(i)
+}
+test()
+// console.log(d)
+// console.log(e)
+// console.log(f)
 
