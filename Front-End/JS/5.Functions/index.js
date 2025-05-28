@@ -92,57 +92,137 @@
 
 
 //scope
-// storage 
+// storage
 
-var a = 1
-let b = 2
-const c = 3
+// var a = 1
+// let b = 2
+// const c = 3
 
 //access
 
-console.log(a)
-console.log(b)
-console.log(c)
+// console.log(a)
+// console.log(b)
+// console.log(c)
 
-function test() {
+// function test() {
 
-  //storage
-  var d = 4
-  let e = 5
-  const f = 6
-  // access
-  console.log(a)
-  console.log(b)
-  console.log(c)
-  console.log(d)
-  console.log(e)
-  console.log(f)
+//   //storage
+//   var d = 4
+//   let e = 5
+//   const f = 6
+//   // access
+//   console.log(a)
+//   console.log(b)
+//   console.log(c)
+//   console.log(d)
+//   console.log(e)
+//   console.log(f)
 
 
-  if (true) {
-    //storage
+//   if (true) {
+//     //storage
 
-    var g = 7
-    let h = 8
-    const i = 9
-    // access 
-    console.log(a)
-    console.log(b)
-    console.log(c)
-    console.log(d)
-    console.log(e)
-    console.log(f)
-    console.log(g)
-    console.log(h)
-    console.log(i)
-  }
+//     var g = 7
+//     let h = 8
+//     const i = 9
+//     // access
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+//     console.log(d)
+//     console.log(e)
+//     console.log(f)
+//     console.log(g)
+//     console.log(h)
+//     console.log(i)
+//   }
 
-  console.log(g)
-  // console.log(h)
-  // console.log(i)
-}
-test()
+//   console.log(g)
+//   // console.log(h)
+//   // console.log(i)
+// }
+// test()
 // console.log(d)
 // console.log(e)
 // console.log(f)
 
+
+
+//Hoisting
+// console.log(a)
+// var a = 1
+// console.log(a)
+
+// function test() {
+//   // console.log(a)
+//   // var a = 10
+//   // console.log(a)
+//   console.log(a)
+//   if (true) {
+//     var a = 100
+//     console.log(a)
+//   }
+// }
+// test()
+
+
+// console.log(a)
+let a = 'sachin'
+console.log(a)
+
+// console.log(b)
+// var b = 40
+// console.log(b)
+
+// console.log(c)
+// var c = true
+// console.log(c)
+
+// console.log(d)
+// var d
+// console.log(d)
+
+// console.log(e)
+// var e = null
+// console.log(e)
+
+// console.log(f)
+// var f = { value: 100 }
+// console.log(f)
+
+// console.log(g)
+// var g = [1, 2, 3]
+// console.log(g)
+
+// console.log(h)
+// h()
+// let h = function hello() {
+//   console.log('named')
+// }
+// h()
+// console.log(h)
+
+// console.log(i)
+
+// // i()
+// var i = function () {
+//   console.log('ananymous')
+// }
+// i()
+// console.log(i)
+
+// console.log(j)
+// // j()
+// var j = () => {
+//   console.log('arrow')
+// }
+// // j()
+// console.log(j)
+
+// console.log(k)
+// k()
+// function k() {
+//   console.log('declare')
+// }
+// console.log(k)
+// k()
