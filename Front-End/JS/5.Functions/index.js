@@ -167,8 +167,8 @@
 
 
 // console.log(a)
-let a = 'sachin'
-console.log(a)
+// let a = 'sachin'
+// console.log(a)
 
 // console.log(b)
 // var b = 40
@@ -226,3 +226,83 @@ console.log(a)
 // }
 // console.log(k)
 // k()
+
+//var vs let vs const
+
+
+//scope
+
+//hoisting
+
+//redeclaration
+
+// var a = 10
+// let a = 10
+// const a = 10
+// console.log(a)
+// console.log(a)
+// console.log(a)
+// let a = 20
+// console.log(a)
+// console.log(a)
+// console.log(a)
+
+//re-assignment
+
+// var a = 10
+// let a = 10
+// const a = 10
+// console.log(a)
+
+// a = 20
+// console.log(a)
+
+//Initialization
+
+// var a
+// let a
+// const a
+// console.log(a)
+// a = 10
+// console.log(a)
+
+
+
+// var x = 1
+// console.log(x)
+// function test() {
+  // console.log(x)
+//    x = 10
+//   console.log(x)
+// }
+// console.log(x)
+// test()
+
+// {
+//   // var x = 10
+//   let x = 10
+//   // console.log(x)
+// }
+// console.log(x)
+
+
+//closure
+
+function outer() {
+  var x = 100
+  return function inner() {
+    console.log(x)
+  }
+}
+
+var inner = outer()
+inner()
+
+
+
+
+
+
+
+
+
