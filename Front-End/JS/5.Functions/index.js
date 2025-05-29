@@ -288,16 +288,134 @@
 
 //closure
 
-function outer() {
-  var x = 100
-  return function inner() {
-    console.log(x)
+// function outer() {
+//   var x = 100
+//   return function inner() {
+//     console.log(x)
+//   }
+// }
+
+// var inner = outer()
+// inner()
+
+
+
+//IIFE  (ES-5)
+
+
+// (() => {
+//   var a = 100
+//   console.log(a)
+// })()
+
+// console.log(a)
+
+//function currying
+
+
+// without curry
+
+// function test(a, b, c) {
+//   var sum = a + b + c
+//   console.log(sum)
+// }
+
+// test(1, 2, 3)
+
+// with curry
+
+// function funA(a) {
+//   return function funB(b) {
+//     return function funC(c) {
+//       var sum = a + b + c
+//       console.log(sum)
+//     }
+//   }
+// }
+
+// funA(1)(2)(3)
+// var funB = funA(1)
+// var funC = funB(2)
+// funC(3)
+
+
+// function disCal(price, dis) {
+//   var disAmout = price * dis
+//   console.log(disAmout)
+// }
+
+// disCal(1000, 0.1)
+// disCal(1000, 0.2)
+// disCal(1000, 0.3)
+// disCal(1000, 0.4)
+// disCal(1000, 0.5)
+
+// function calPrice(price) {
+//   return function calDis(dis) {
+//     var disAmout = price * dis
+//     console.log(disAmout)
+//   }
+// }
+
+// var calDis = calPrice(1000)
+// calDis(0.1)
+// calDis(0.2)
+// calDis(0.3)
+// calDis(0.4)
+// calDis(0.5)
+
+
+//first class function
+
+// var x = function () {
+//   return function inner() {
+    
+//   }
+// }
+// x(function cb(){})
+
+
+//heigher order function
+
+// function hof(cb) {
+//   console.log('hof')
+//  function inner() {
+//     console.log('inner')
+//   }
+//   inner()
+//   cb()
+// }
+// hof(function cb() {
+//   console.log('cb')
+// })
+
+
+// function pure(a,b,c) {
+//   console.log(a+b+c)
+// }
+
+// pure(1, 2, 3)
+
+// function impure(a, b, c) {
+//   var d = Math.random()*10
+//   console.log(a+b+c+d)
+// }
+
+// impure(1,2,3)
+
+
+// recurssion function
+
+function factorial(n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
   }
 }
 
-var inner = outer()
-inner()
-
+let result = factorial(5);
+console.log(result);
 
 
 
