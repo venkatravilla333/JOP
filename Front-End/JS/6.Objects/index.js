@@ -237,7 +237,7 @@
 
 
 // var str = ' Hi how are you '
-var str = 'Hi you how are you'
+// var str = new String('Hi you how are you')
 // console.log(str)
 // console.log(str.length)
 
@@ -291,7 +291,6 @@ var str = 'Hi you how are you'
 // console.log(str.startsWith('bye'))
 // console.log(str.endsWith('hi'))
 // console.log(str.endsWith('you'))
-
 
 
 
