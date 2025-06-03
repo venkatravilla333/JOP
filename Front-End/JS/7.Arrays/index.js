@@ -272,17 +272,27 @@ console.log(arr)
 
 // console.log(aso)
 
-for (var i = 0; i < arr.length; i++){
-  for (var j = i + 1; j < arr.length; j++){
-    if (arr[i] > arr[j]) {
-      var temp = arr[i]
-      arr[i] = arr[j]
-      arr[j] = temp
-    }
-  }
-}
+// for (var i = 0; i < arr.length; i++){
+//   for (var j = i + 1; j < arr.length; j++){
+//     if (arr[i] > arr[j]) {
+//       var temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//     }
+//   }
+// }
 
-console.log(arr)
+// console.log(arr)
+
+// function test() {
+//   console.log(arguments, typeof arguments)
+
+//   var res = Array.from(arguments)
+//   console.log(res, typeof res)
+//   console.log(Array.isArray(res))
+
+// }
+// test(1,2,3,4,5)
 
 
 
