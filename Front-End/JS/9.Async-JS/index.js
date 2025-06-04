@@ -102,7 +102,26 @@
 // diplayData()
 
 
+var pr1 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res('PR-1')
+  }, 2000)
+})
+var pr2 = new Promise((res, rej) => {
+  setTimeout(() => {
+  res('PR-2')
+  }, 4000)
+})
+var pr3 = new Promise((res, rej) => {
+  setTimeout(() => {
+  res('PR-3')
+  }, 0)
+})
 
+// Promise.race([pr1, pr2, pr3]).then((res) => { console.log(res) })
+
+// Promise.all([pr1, pr2, pr3]).then((res)=>{console.log(res)})
+Promise.allSettled([pr1, pr2, pr3]).then((res)=>{console.log(res)})
 
 
 
